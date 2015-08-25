@@ -1,3 +1,6 @@
-Selectize.define('no-delete', function(options) {
-  this.deleteSelection = function() {};
+Selectize.define('no-clear', function(options) {
+	this.showInput = function() { 
+		this.hideInput();
+	};
+	this.deleteSelection = function() {};
 });
